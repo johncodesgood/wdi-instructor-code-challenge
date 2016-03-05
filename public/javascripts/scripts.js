@@ -2,7 +2,7 @@ function getMovieList() {
   // Get the search terms that the user submitted and then create the URL string
   // for the OMDB API request
   var searchTerm = document.getElementById('search-input').value;
-  var apiUrl = 'http://www.omdbapi.com/?s=' + searchTerm;
+  var apiUrl = 'https://www.omdbapi.com/?s=' + searchTerm;
   // Call the function that makes the actual API request
   ombdApiRequest(apiUrl);
   document.getElementById('search-input').value = "";
@@ -54,7 +54,7 @@ function showMovieList(responseMovieList){
 
 function getMovieDetails(movieTitle){
   // Create the URL string and then call the function that makes the API request
-  var apiUrl = 'http://www.omdbapi.com/?t=' + movieTitle;
+  var apiUrl = 'https://www.omdbapi.com/?t=' + movieTitle;
   ombdApiRequest(apiUrl);
 }
 
