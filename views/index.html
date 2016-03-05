@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search</title>
+  <script src='/javascripts/scripts.js'></script>
+</head>
+<body>
+  <input id="search-input" type="text" onkeyup="keyPressed(event)" placeholder="Search terms">
+  <button id="search-button" type="button" onclick="getMovieList()">Search</button>
+  <button id="favorites-button" type="button" onclick="getFavorites()">Favorites</button>
+	<ul id='page-list'></ul>
+</body>
+</html>
