@@ -20,7 +20,7 @@ function ombdApiRequest(apiUrl) {
       var responseMovieJSON = JSON.parse(request.responseText);
       // Determine if the request was a keyword search or a movie title search and 
       // call the corresponding function to display the results
-      if (apiUrl.charAt(24) === 's') {
+      if (apiUrl.charAt(25) === 's') {
         var responseMovieList = responseMovieJSON.Search;
         showMovieList(responseMovieList);
       } else {
